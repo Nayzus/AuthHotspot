@@ -1,0 +1,89 @@
+@import 'config';
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+  background: #007bff;
+  color: #fff;
+  font-size: 20px;
+  padding: 15px;
+}
+h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  padding-bottom: 10px;
+  font-weight: 700;
+  &:after {
+    width: 150px;
+    height: 3px;
+    display: block;
+    margin: 0 auto;
+    content: '';
+    background: #007bff;
+    position: relative;
+    top: 5px;
+  }
+}
+p {
+  font-size: 18px;
+  padding: 15px;
+}
+#login {
+  position: relative;
+  padding-top: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  &:after {
+    content: '';
+    background: rgba(31,31,31,0.6);
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    position: absolute;
+    left: 0;
+  }
+  .container {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  .auth {
+    padding: 40px;
+    height: 200px;
+    background: #333333;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+  }
+  .go_to {
+    width: 300px;
+    margin: 0 auto;
+    .btn {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform:translate3d(0, -10%, 0)
+  }
+  50% {
+    transform:translate3d(0, 10%, 0)
+  }
+  100% {
+    transform:translate3d(0, -10%, 0)
+  }
+}
+
+
+//**Media**//
+@import 'media';
