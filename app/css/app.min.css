@@ -6592,14 +6592,15 @@ p {
 #login {
   position: relative;
   padding-top: 40px;
+  padding-bottom: 40px;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: calc(100vh - 200px);
 }
 
 #login:after {
   content: '';
-  background: rgba(31,31,31,.6);
+  background: rgba(0,0,0,.45);
   display: block;
   height: 100%;
   width: 100%;
@@ -6616,24 +6617,57 @@ p {
   z-index: 2;
 }
 
-#login .auth {
+#login .logo__container {
+  text-align: center;
+  padding: 15px;
+}
+
+#login .logo__container img {
+  max-width: 320px;
+  max-height: 200px;
+}
+
+.auth {
   padding: 40px;
   height: 200px;
   background: #333;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
 }
 
-#login .go_to {
+.auth .container {
+  position: relative;
+}
+
+.go_to {
   width: 300px;
   margin: 0 auto;
 }
 
-#login .go_to .btn {
+.go_to .btn {
   width: 100%;
+  text-align: center;
   display: block;
+}
+
+#form {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  bottom: 0;
+}
+
+#form .form_call {
+  width: 100%;
+  padding: 40px;
+  height: 250px;
+  border-radius: 25px 25px 0 0;
+  -webkit-box-shadow: 4px 4px 8px 0 rgba(34,60,80,.2);
+  box-shadow: 4px 4px 8px 0 rgba(34,60,80,.2);
+  display: block;
+  position: absolute;
+  background: #fff;
+  top: -250px;
+  z-index: 999;
 }
 
 @-webkit-keyframes spin {
