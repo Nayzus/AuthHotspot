@@ -6645,8 +6645,20 @@ p {
 
 .go_to .btn {
   width: 100%;
+  border-radius: 5px;
   text-align: center;
   display: block;
+  -webkit-box-shadow: 4px 4px 8px 0 rgba(34,60,80,.2);
+  box-shadow: 4px 4px 8px 0 rgba(34,60,80,.2);
+}
+
+.go_to .btn:hover {
+  color: #333;
+  background: #fff;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  text-decoration: none;
 }
 
 #form {

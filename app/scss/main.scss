@@ -79,8 +79,16 @@ p {
   margin: 0 auto;
   .btn {
     width: 100%;
+    border-radius: 5px;
     text-align: center;
     display: block;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    &:hover {
+      color: #333;
+      background: #fff;
+      transition: all .2s;
+      text-decoration: none;
+    }
   }
 }
 
