@@ -1,14 +1,19 @@
 
 $( document ).ready(function() {
-    $('.phone_mask').mask("+7(999) 999-9999");
+    function alertInfo(text) {
+        $('.alert').show().text(text);
+    }
+    $('.phone_mask').mask("+7(999)999-9999");
 
     $('#open__modal').click(function () {
         $('.form_call').toggleClass('active');
         $('.overlay').toggleClass('active');
+        $('body').toggleClass('no-scroll');
     })
     $('.close_modal').click(function (){
         $('.overlay').toggleClass('active');
         $('.form_call').toggleClass('active');
+        $('body').toggleClass('no-scroll');
     })
     $('.overlay').click(function () {
         $('.form_call').toggleClass('active');
@@ -16,8 +21,16 @@ $( document ).ready(function() {
     })
 
     $('#step-go').click(function () {
-        $('.step-1').removeClass('active');
-        $('.step-2').addClass('active');
+        let phone = $('.phone_mask').val();
+        if (phone.length === 15) {
+            $('.step-1').removeClass('active');
+            $('.step-2').addClass('active');
+            $('.alert').hide();
+            $('#phone').text(phone);
+        }
+        else {
+            alertInfo('Номер телефона указан неверно!')
+        }
     })
 
     $('#step-prev').click(function () {
