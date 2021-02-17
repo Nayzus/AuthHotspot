@@ -11,25 +11,7 @@
     <title>HotSpot</title>
 </head>
 <body>
-<!--<section id="main">-->
-<!--    <div class="container">-->
-<!--        <div class="row">-->
-<!--            <div class="col-6">-->
-<!--                <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>-->
-<!--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laborum mollitia ullam. A accusamus, ad aliquam atque, consequatur distinctio dolorem expedita hic, illo itaque laborum maiores omnis perspiciatis quo quod!</p>-->
-<!--                <div class="img__container">-->
-<!--                    <img src="https://imgholder.ru/600x300/8493a8/adb9ca&text=IMAGE+HOLDER&font=kelson" alt="">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-6 bg_img">-->
-<!--                <div class="go_to">-->
-<!--                    <a href="#">Перейти в интернет</a>-->
-<!--                </div>-->
 
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
 <section id="login" style="background-image: url('images/dest/kristaps-ungurs-x5sWUJufxZU-unsplash.jpg')">
     <div class="container">
         <div class="logo__container">
@@ -44,31 +26,73 @@
             <img src="https://imgholder.ru/600x300/8493a8/adb9ca&text=IMAGE+HOLDER&font=kelson" alt="">
         </div>
     </div>
-
 </section>
-<div class="auth">
+
+
+<section class="auth">
     <div class="container">
         <div class="go_to">
-            <a href="#" class="btn">Перейти в интернет</a>
+            <a class="btn" id="open__modal">Перейти в интернет</a>
         </div>
     </div>
+</section>
 
-</div>
-<section id="form" style="display:none;">
+<div class="overlay"></div>
+
+<div id="form">
     <div class="form_call container">
+
         <div class="form__header">
             <h2>Регистрация в сети</h2>
-            <span>exit</span>
+            <a class="close_modal">закрыть</a>
+        </div>
+
+        <div class="separator"></div>
+
+
+        <div class="alert" style="display: none">
+            Номер указан не корректно, проверте правильность введенного телефона.
         </div>
 
         <form action="#">
-            <input type="text">
-            <input type="checkbox" value=""> 
-            <input type="submit" value="Получить смс">
+
+            <div class="form__group step-1 active">
+                <label>
+                    <span>Номер телефона:</span>
+                    <input type="tel" class="phone_mask" size="14" placeholder="+7(999)-999-99-99">
+                </label>
+                <div class="checkbox__group"><input type="checkbox" name="private" id="private" value="1" checked> <label
+                        for="private">Согласен на обработку персональных данных</label></div>
+
+                <a href="#" class="form__submit" id="step-go">Запросить звонок</a>
+            </div>
+
+            <div class="form__group step-2">
+                <div class="form__info">
+                    <p>Сейчас на номер: <span id="phone">+7(999)9999999</span> поступит звонок, в котором продиктуется
+                        код. </p>
+                </div>
+                <label>
+                    <span>Введите код:</span>
+                    <input type="tel" size="5" placeholder="0000">
+                </label>
+                <div class="step-prew"><a id="step-prew">поменять телефон</a></div>
+                <a href="#" class="form__submit">Отправить</a>
+            </div>
 
         </form>
+
+        <div class="form__footer">
+            <p>Согласно постановлению правительства России №758 и №801 идентификация в WiFi-сетях необходима для
+                безопасности граждан </p>
+        </div>
+
+        <div class="orion_cop">
+            <img src="images/dest/logo.png" alt="">
+        </div>
+
     </div>
-</section>
+</div>
 
 <script src="js/app.min.js"></script>
 </body>

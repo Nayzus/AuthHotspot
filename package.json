@@ -27,6 +27,8 @@
 		"jquery": "^3.5.0"
 	},
 	"dependencies": {
+		"inputmask": "^5.0.5",
+		"jquery.maskedinput": "^1.4.1",
 		"npx": "^10.2.2"
 	}
 }
