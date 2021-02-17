@@ -20,7 +20,7 @@ $( document ).ready(function() {
         $('.step-2').addClass('active');
     })
 
-    $('#step-prew').click(function () {
+    $('#step-prev').click(function () {
         $('.step-2').removeClass('active');
         $('.step-1').addClass('active');
     })

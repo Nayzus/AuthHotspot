@@ -37,8 +37,11 @@ p {
   font-size: 18px;
   padding: 15px;
 }
-
-#login {
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+#main {
   position: relative;
   padding-top: 30px;
   padding-bottom: 30px + 120px;
@@ -64,6 +67,11 @@ p {
     position: relative;
     z-index: 2;
   }
+  .img__container {
+    img {
+      max-width: 100%;
+    }
+  }
   .logo__container {
     text-align: center;
     padding: 15px;
@@ -82,27 +90,28 @@ p {
   z-index: 4;
   bottom: 0;
   background: #333333;
+  width: 100%;
   .container {
     position: relative;
   }
-  width: 100%;
-}
-.go_to {
-  margin: 0 auto;
-  .btn {
-    width: 100%;
-    border-radius: 100px;
-    text-align: center;
-    display: block;
-    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-    &:hover {
-      color: #333;
-      background: #fff;
-      transition: all .2s;
-      text-decoration: none;
+  .go_to {
+    margin: 0 auto;
+    .btn {
+      width: 100%;
+      border-radius: 100px;
+      text-align: center;
+      display: block;
+      box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+      &:hover {
+        color: #333;
+        background: #fff;
+        transition: all .2s;
+        text-decoration: none;
+      }
     }
   }
 }
+
 
 #form {
   position: relative;
@@ -110,6 +119,29 @@ p {
   max-height: 80vh;
   margin: 0 auto;
   bottom: 0;
+  .alert {
+    text-align: center;
+    background: #FF6766;
+    padding: 15px;
+    border-radius: 15px;
+    color: #fff;
+    margin-bottom: 10px;
+    border-bottom: #C82647 3px solid ;
+  }
+
+
+  .step-prev {
+    display: block;
+    text-align: right;
+    a#step-prev {
+      color: #007bff;
+      cursor: pointer;
+      font-size: 12px;
+      text-align: right;
+      text-decoration: underline;
+
+    }
+  }
   .form_call {
     width: 100%;
     border: 15px solid #eee;
@@ -191,7 +223,7 @@ p {
           display: block;
         }
         .checkbox__group {
-          padding: 10px 0;
+          padding-top: 10px;
           display: flex;
           flex-direction: row;
           justify-content: left;
@@ -280,31 +312,6 @@ p {
     z-index: 30;
     opacity: 1;
     transition: all .4s;
-  }
-}
-
-
-.alert {
-  text-align: center;
-  background: #FF6766;
-  padding: 15px;
-  border-radius: 15px;
-  color: #fff;
-  margin-bottom: 10px;
-  border-bottom: #C82647 3px solid ;
-}
-
-
-.step-prew {
-  display: block;
-  text-align: right;
-  a#step-prew {
-    color: #007bff;
-    cursor: pointer;
-    font-size: 12px;
-    text-align: right;
-    text-decoration: underline;
-
   }
 }
 
