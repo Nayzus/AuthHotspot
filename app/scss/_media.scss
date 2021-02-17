@@ -10,11 +10,18 @@
   .container {
     max-width: 680px;
   }
+  #form {
+    max-width: 680px;
+  }
 
 }
 
 @include media-breakpoint-down(sm) {
+  .container {
+    max-width: 100%;
+  }
 }
+
 @include media-breakpoint-down(xs) {
   #main .logo__container img {
     max-height: 100px;

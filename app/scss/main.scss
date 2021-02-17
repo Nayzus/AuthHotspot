@@ -116,7 +116,6 @@ p {
 #form {
   position: relative;
   max-width: 800px;
-  max-height: 80vh;
   margin: 0 auto;
   bottom: 0;
   .alert {
@@ -151,6 +150,9 @@ p {
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     display: block;
     position: fixed;
+    max-height: 80vh;
+    overflow-y: auto;
+
     background: #fff;
     bottom: -100%;
     z-index: 999;
