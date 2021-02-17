@@ -1,7 +1,5 @@
 @import 'config';
-* {
-  font-family: 'Montserrat', sans-serif;
-}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */
@@ -89,7 +87,7 @@ p {
   padding: 30px 0;
   border-top: 1px solid rgba(0,0,0,0.2);
   position: fixed;
-  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
   z-index: 4;
   bottom: 0;
   background: #333333;
@@ -104,7 +102,7 @@ p {
       border-radius: 100px;
       text-align: center;
       display: block;
-      box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+      box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
       &:hover {
         color: #333;
         background: #fff;
@@ -162,7 +160,7 @@ p {
     padding: 15px 30px 30px;
     height: auto;
     border-radius: 25px 25px 0 0;
-    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
     display: block;
     position: fixed;
     max-height: 80vh;

@@ -6,32 +6,32 @@ $textcolor: #1d1d1b;
 ; // Text Color
 $yellow: #ffed00;
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
-$proxima: Proxima, sans-serif; // Roboto Font Family
+$montserrat: 'Montserrat', sans-serif; // Roboto Font Family
 
-// Bootstrap compatible gutter variable => $gutter
-$grid-gutter-width: 30px;
-$gutter: $grid-gutter-width;
-$grid-columns: 12;
-$grid-breakpoints: (
-    // Extra small screen / phone
-        xs: 0,
-    // Small screen / phone
-        sm: 576px,
-    // Medium screen / tablet
-        md: 768px,
-    // Large screen / desktop
-        lg: 992px,
-    // Extra large screen / wide desktop
-        xl: 1200px,
-        xxl: 1360px
-);
-$container-max-widths: (
-        sm: 540px,
-        md: 720px,
-        lg: 960px,
-        xl: 1200px,
-        xxl: 800px
-);
+//// Bootstrap compatible gutter variable => $gutter
+//$grid-gutter-width: 30px;
+//$gutter: $grid-gutter-width;
+//$grid-columns: 12;
+//$grid-breakpoints: (
+//    // Extra small screen / phone
+//        xs: 0,
+//    // Small screen / phone
+//        sm: 576px,
+//    // Medium screen / tablet
+//        md: 768px,
+//    // Large screen / desktop
+//        lg: 992px,
+//    // Extra large screen / wide desktop
+//        xl: 1200px,
+//        xxl: 1360px
+//);
+//$container-max-widths: (
+//        sm: 540px,
+//        md: 720px,
+//        lg: 960px,
+//        xl: 1200px,
+//        xxl: 800px
+//);
 
 // IMPORT SECTION
 
@@ -55,9 +55,8 @@ $container-max-widths: (
     }
 }
 
-@include font('Proxima', normal, 400, '../fonts/ProximaNova-Regular.woff2');
-@include font('Proxima', normal, 600, '../fonts/ProximaNova-Semibold.woff2');
-@include font('Proxima', normal, 700, '../fonts/ProximaNova-Bold.woff2');
+@include font('Montserrat', normal, 400, '../fonts/Montserrat-Regular.woff2');
+@include font('Montserrat', normal, 800, '../fonts/Montserrat-ExtraBold.woff2');
 
 // GENERAL DOCUMENT STYLES
 
@@ -83,7 +82,7 @@ input, textarea {
 }
 
 body {
-    font-family: $proxima;
+    font-family: $montserrat;
     font-size: $fontsize;
     min-width: 320px;
     position: relative;
