@@ -334,24 +334,17 @@ template {
 }
 
 @font-face {
-  font-family: Proxima;
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 400;
-  src: local("Proxima"),url(../fonts/ProximaNova-Regular.woff2) format("woff2");
+  src: local("Montserrat"),url(../fonts/Montserrat-Regular.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: Proxima;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: 600;
-  src: local("Proxima"),url(../fonts/ProximaNova-Semibold.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: Proxima;
-  font-style: normal;
-  font-weight: 700;
-  src: local("Proxima"),url(../fonts/ProximaNova-Bold.woff2) format("woff2");
+  font-weight: 800;
+  src: local("Montserrat"),url(../fonts/Montserrat-ExtraBold.woff2) format("woff2");
 }
 
 ::-webkit-input-placeholder {
@@ -400,17 +393,13 @@ textarea:required:valid {
 }
 
 body {
-  font-family: Proxima,sans-serif;
+  font-family: Montserrat,sans-serif;
   font-size: 14px;
   min-width: 320px;
   position: relative;
   line-height: 1.5;
   overflow-x: hidden;
   color: #1d1d1b;
-}
-
-* {
-  font-family: Montserrat,sans-serif;
 }
 
 input::-webkit-inner-spin-button,
@@ -502,7 +491,7 @@ p {
 }
 
 .auth {
-  padding: 30px 0;
+  padding: 15px 0;
   border-top: 1px solid rgba(0,0,0,.2);
   position: fixed;
   -webkit-box-shadow: 4px 4px 8px 0 rgba(34,60,80,.2);
@@ -523,6 +512,10 @@ p {
 
 .auth .go_to .btn {
   width: 100%;
+  max-width: 500px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 0 auto;
   border-radius: 100px;
   text-align: center;
   display: block;
@@ -584,6 +577,7 @@ p {
 #form .form_call {
   width: 100%;
   border: 15px solid #eee;
+  border-bottom: none;
   padding: 15px 30px 30px;
   height: auto;
   border-radius: 25px 25px 0 0;

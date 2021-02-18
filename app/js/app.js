@@ -18,6 +18,8 @@ $( document ).ready(function() {
     $('.overlay').click(function () {
         $('.form_call').toggleClass('active');
         $(this).toggleClass('active');
+        $('body').toggleClass('no-scroll');
+
     })
 
     $('#step-go').click(function () {
